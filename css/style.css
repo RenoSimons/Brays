@@ -1,0 +1,286 @@
+@media (min-width: 1200px) {  
+	body {
+		position: relative;
+		margin: 0 auto;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.content-container {
+		max-width: 940px;
+		margin: 0 auto;
+		position: relative;
+		margin-top: 50px;
+	}
+
+	.jumbotron {
+		background-image: url("../images/omslagfoto.png");
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat; /* Do not repeat the image */
+		background-size: cover;
+		height: 100vh;
+		text-align: center;
+	}
+	
+	.jumbotron-title {
+		color: #2AB6A6;
+		letter-spacing: 10px;
+		font-size: 50px;
+	}
+
+	#jumbotron-content {
+		margin-top: 300px;
+	}
+
+	.btn-primary {
+		margin-top: 50px;
+		width: 300px;
+		background-color: rgba(42, 182, 166, 0.2);
+		color: white;
+		border: 3px solid #2AB6A6;
+		border-radius: 20px;
+		letter-spacing: 3px;
+	}
+
+	.btn-primary:hover {
+		background-color: #2AB6A6;
+		border: 3px solid #2AB6A6;
+	}
+
+	#logo {
+		width: 200px;
+		
+	}
+	
+	#navbar > ul {
+		font-size: 1.1rem;
+	}
+
+	#navbar > ul > li {
+		padding: 0 50px 0 50px;
+		letter-spacing: 1px;
+	}
+	
+	#navbar > ul > li > a {
+		color: #2AB6A6;
+	}
+	
+	.active {
+		background-color: #2AB6A6 !important;
+		color: white !important;
+	}
+
+	#whybrays {
+		text-align: center;
+	}
+
+	.section-title {
+		color: #2AB6A6;
+		font-size: 2rem;
+		letter-spacing: 3px;
+		font-style: italic;
+		padding: 20px;
+	}
+
+	#whybrays p {
+		font-size: 1.2rem;
+		font-style: italic;
+		opacity: 0.8;
+		letter-spacing: 1px;
+	}
+
+	.under-border {
+		padding-bottom: 50px;
+		border-bottom: 2px solid #2AB6A6;
+	}
+	
+	#who h4 {
+		text-align: center;
+	}
+
+	#who p {
+		font-size: 1.2rem;
+		opacity: 0.9;
+		letter-spacing: 1px;
+	}
+
+	#team-placeholder {
+		width: 350px;
+	}
+
+	#skyline-img {
+		max-width: 940px;
+		margin-top: 5vh;
+	}
+
+	.spacing-top-bottom {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.section-title2 {
+		color: #2AB6A6;
+		font-size: 1.5rem;
+		letter-spacing: 3px;
+		font-style: italic;
+	}
+
+	.kleurbol {
+		width: 50px;
+		margin-right: 50px;
+	}
+
+	.vertical-align {
+		margin-top: 10%;
+	}
+
+	.red-text {
+		color: red;
+		margin-left: 75px;
+		margin-top: 20px;
+		font-size: 0.8rem;
+		font-style: italic;
+	}
+
+	.spec-icon {
+		width: 75px;
+		height: 75px;
+	}
+
+
+	.specs-text {
+		font-size: 1rem;
+		opacity: 0.9;
+		letter-spacing: 1px;
+	}
+
+	.spec-icon-box {
+		padding: 10px;
+	}
+
+	.upper-form {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.form-group2 {
+		width: 700px;
+		margin-left: 120px;
+	}
+
+	input, textarea {
+		border: 2px solid #2AB6A6 !important;
+  		border-radius: 20px !important;
+	}
+
+	#send-btn {
+		width: 35px;
+		margin-left: 120px;
+		margin-top: 20px;
+	}
+
+	#contact label {
+		font-size: 1rem;
+		opacity: 0.9;
+		letter-spacing: 1px;
+	}
+
+	#contact h4 {
+		text-align: center;
+		padding-bottom: 50px;
+	}
+
+	#contact form {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #2AB6A6;
+		padding: 50px 0 50px 0;
+		border-radius: 20px;
+	}
+
+	.app-pics {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	footer {
+		width: 100vw;
+		background-color: #2AB6A6 ;
+		height: 100px;
+		position: absolute;
+	}
+
+
+
+	 /*DESKTOP ANIMATIONS */
+
+	 html {
+	  scroll-behavior: smooth;
+	}
+
+	#whybrays {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+
+	#whybrays.visible {
+		opacity: 1;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+
+	#who {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+
+	#who.visible {
+		opacity: 1;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+
+	#app {
+		opacity: 0;
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		transform: scale(0.9);
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+
+	#app.visible {
+		opacity: 1;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+	}
+}
