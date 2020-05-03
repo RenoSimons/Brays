@@ -25,7 +25,7 @@ new ScrollMagic.Scene({
 	offset: 50 // move trigger to center of element
 })
 .setClassToggle("#whybrays", "visible") // add class to reveal
-.addIndicators() // add indicators (requires plugin)
+//.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -35,7 +35,7 @@ new ScrollMagic.Scene({
 	offset: 50 // move trigger to center of element
 })
 .setClassToggle("#who", "visible") // add class to reveal
-.addIndicators() // add indicators (requires plugin)
+//.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
 
 new ScrollMagic.Scene({
@@ -45,5 +45,15 @@ new ScrollMagic.Scene({
 	offset: 50 // move trigger to center of element
 })
 .setClassToggle("#app", "visible") // add class to reveal
-.addIndicators() // add indicators (requires plugin)
+//.addIndicators() // add indicators (requires plugin)
+.addTo(controller);
+
+new ScrollMagic.Scene({
+	triggerElement: "#contact", 
+	triggerHook: 0.8, // show, when scrolled 10% into view
+	duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
+	offset: 50 // move trigger to center of element
+})
+.setClassToggle("#contact", "visible") // add class to reveal
+//.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
