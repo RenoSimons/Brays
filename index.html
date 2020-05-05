@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<script src="janpaepke-ScrollMagic-1b717bf\scrollmagic\uncompressed\ScrollMagic.js"></script>
 	<script src="janpaepke-ScrollMagic-1b717bf/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 </head>
@@ -13,7 +15,7 @@
 
 	<!-- BIG LANDING PICTURE -->
 
-	<div class="jumbotron" id="product">
+	<div class="jumbotron">
 		<div id="jumbotron-content">
 			<h1 class="jumbotron-title">Traveling has never been so easy!</h1>
 	  		<a class="btn btn-primary" href="#whybrays" role="button">Find Out More</a>
@@ -22,17 +24,17 @@
 
 	<!-- STICKY NAVBAR -->
 
-	<nav id="navbar" class="navbar navbar-light fixed-top justify-content-center">
+	<nav id="navbar" class="navbar fixed-top justify-content-center">
 	  <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" alt=""></a>
 	  <ul class="nav nav-pills">
 	    <li class="nav-item">
+	      <a class="nav-link" href="#whybrays">Why Brays</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#who">Who we are</a>
+	    </li>
+	    <li class="nav-item">
 	      <a class="nav-link" href="#product">Our Product</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#whybrays">Why Brays?</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#who">Who We Are</a>
 	    </li>
 	    <li class="nav-item">
 	      <a class="nav-link" href="#app">Mobile App</a>
@@ -41,22 +43,26 @@
 	      <a class="nav-link" href="#contact">Contact</a>
 	    </li>
 	  </ul>
+
+	  <div id="progressbar" class=" progress progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="margin-top:40px; background-color: #2AB6A6; transition: width 1s ease-out; height: 7.5px;">
+	  </div>
 	</nav>
+
+	
 
 	<!-- WEBSITE CONTENT SECTION -->
 	
-	<div class="content-container spacing-top-bottom" data-spy="scroll" data-target="#navbar" data-offset="0">
+	<div class="content-container spacing-top-bottom" data-spy="scroll" data-target="#navbar" data-offset="-200">
 		
 		<!-- WHY BRAYS -->
 		<div id="whybrays" >
 			<h4 class="section-title">Why Brays?</h4>
 
-			<p>Wij beseffen hoe gevaarlijk gsm-gebruik achter het stuur is. Soms vergeten we echter dat je gsm bovenhalen tijdens het fietsen eens zo gevaarlijk is! Vanaf nu kunnen fiets clubbers,
-			step-gebruikers en koeriers van bedrijven zoals Deliveroo zich zonder zorgen naar hun doel begeven.</p>
+			<p><span class="blockquote">"</span>Wij beseffen hoe gevaarlijk gsm-gebruik achter het stuur is. Soms vergeten we echter dat je gsm <p> bovenhalen tijdens het fietsen eens zo gevaarlijk is! Vanaf nu kunnen fiets clubbers, step-gebruikers en koeriers van bedrijven zoals Deliveroo zich zonder zorgen naar hun doel begeven.</p>
 
-			<p class="under-border">Onze missie luidt dan ook:
-				<br>
-			de zwakke weggebruiker vanaf nu praktisch en veilig over nieuwe routes naar zijn bestemming te leiden.</p>
+			<p>Onze missie luidt dan ook:
+			<br>
+			de weggebruiker vanaf nu praktisch en veilig over nieuwe routes naar zijn bestemming te leiden.<span class="blockquote">"</span></p>
 		</div>
 		
 
@@ -83,24 +89,28 @@
 
 				<img id="skyline-img" src="images/skyline.png" alt="">
 			</div>
+		</div>
 
-			<div class="container d-flex spacing-top-bottom">
-				<div class="row">
-			    	<div class="col-sm">
-			      		<img id="" src="images/placeholder-band.jpg" alt="">
-			    	</div>
-			    	<div class="col-sm vertical-align">
-			      		<h4 class="section-title2">Brays comes in different ways...</h4>
-			      		<div class="d-flex p-2 justify-content-center">
-			      			<a href=""><img class="kleurbol" src="images/bol-zwart.png" alt=""></a>
-			      			<a href=""><img class="kleurbol" src="images/bol-groen.png" alt=""></a>
-			      			<a href=""><img class="kleurbol" src="images/bol-wit.png" alt=""></a>
-			      		</div>
-			      		<p><span class="red-text">*select color to display</span></p>
-			    	</div>
-			  	</div>
-			</div>
+		<!-- OUR PRODUCT-->
 
+		<div id="product" class="container d-flex spacing-top-bottom">
+			<div class="row">
+			    <div class="col-sm">
+			      	<img src="images/RenderGreen.png" alt="" id="render-img"class="bracelet-img">
+			    </div>
+			    <div class="col-sm vertical-align">
+			      	<h4 class="section-title2">Brays comes in different ways...</h4>
+			      	<div class="d-flex p-2 justify-content-center" id="fader">
+			      		<img id="kleurbol"class="kleurbol" src="images/RenderGreen.png" alt="">
+			      		<img id="kleurbol2"class="kleurbol" src="images/RenderWhite.png" alt="">
+			      		<img id="kleurbol3"class="kleurbol" src="images/RenderBlack.png"alt="">
+			      	</div>
+			      	<p><span class="red-text">*select color to display</span></p>
+			    </div>
+			  </div>
+		</div>
+		
+		<div  id="specs">
 			<h4 class="section-title2">Specifications</h4>
 			<div class="d-flex p-2 justify-content-space-between align-middle">
 				<div class="spec-icon-box">
@@ -115,22 +125,21 @@
 				<div class="spec-icon-box">
 					<img class="spec-icon" src="images/horn.png" alt=""><span class="specs-text">Technical support</span>
 				</div>
-				
 			</div>
 		</div>
-
-
 		<!-- Mobile App -->
 
 		<div id="app" class="spacing-top-bottom">
 			<h4 class="section-title">Our product comes with a free App available on Android and IOS</h4>
 
 			<div class="app-pics">
-				<img src="images/app1.png" alt="" class="app-pic">
-				<img src="images/app2.png" alt="" class="app-pic">
-				<img src="images/app3.png" alt="" class="app-pic">
-				<img src="images/app4.png" alt="" class="app-pic">
-			</div>	
+				<img src="images/phonehand.png" alt="" class="app-pic">
+			</div>
+
+			<div class="app-pics2">
+				<a href=""><img src="images/googleplay.png" alt="" class="store-pic"></a>
+				<a href=""><img src="images/appstore.png" alt="" class="store-pic"></a>
+			</div>
 			
 		</div>
 
@@ -160,6 +169,8 @@
 			</form>
 		</div>
 	</div>
+
+
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
